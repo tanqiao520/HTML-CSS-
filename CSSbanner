@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#banner{
+			width: 510px;
+			height:202px;
+			overflow: hidden;
+			margin-left: 300px;
+			margin-top: 100px;
+			position: relative;
+		}
+
+		
+		#banner ul{
+			animation: change 10s infinite;
+			position: absolute;
+			width:1200px;
+			margin:0;
+			padding: 0;
+			border:none;
+			left:0;
+			top:0;
+		}
+		
+		#banner ul li{
+			width:100px;
+			height: 200px;
+			float: left;
+			text-align: center;
+			border:1px solid #ddd;
+			list-style: none;
+		}
+		@keyframes change{
+			0%{
+				left: 0px;
+			}
+			20%{
+				left: -102px;
+
+			}
+			40%{
+				left: -204px;
+
+			}
+			60%{
+				left: -306px;
+
+			}
+			80%{
+				left: -408px;
+
+			}
+			100%{
+				left: -510px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="banner">
+		
+		<ul>
+			<li style="background-color: red"></li>
+			<li style="background-color: yellow"></li>
+			<li style="background-color: blue"></li>
+			<li style="background-color: green"></li>
+			<li style="background-color: pink"></li>
+			<li style="background-color: red"></li>
+			<li style="background-color: yellow"></li>
+			<li style="background-color: blue"></li>
+			<li style="background-color: green"></li>
+			<li style="background-color: pink"></li>		
+		</ul>
+	
+</body>
+</html>
